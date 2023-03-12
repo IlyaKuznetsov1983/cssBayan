@@ -51,7 +51,7 @@ label {
 
 h1 {
     padding: 1rem 0;
-    font-size: 3.5 rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -62,7 +62,7 @@ span {
 
 @media screen and (min-width: 320px) {
     span {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
 }
@@ -120,7 +120,7 @@ span {
 }
 
 .accord {
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     border-top: 0.08rem solid rgb(237, 232, 240);
 }
 
@@ -137,6 +137,7 @@ span {
     .accord:hover .icon {
         transform: rotate(55deg);
     }
+}
 
     .accord label:active {
         cursor: wait;
@@ -145,7 +146,10 @@ span {
     .accord input:not(:checked) + label:active .icon {
         color: rgb(49, 36, 21);
     }
-}
+    
+    .accord input:not(:checked) + label:active .text {
+        color: rgb(49, 36, 21);
+    }
 
 .icon {
     opacity: 0;
