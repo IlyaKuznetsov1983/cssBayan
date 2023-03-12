@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    color: #01224d;
+    color: #235699;
     background: #f5eef5;
     overflow: hidden;
 }
@@ -53,4 +53,10 @@ span {
 .icon {
     opacity: 0;
     transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
