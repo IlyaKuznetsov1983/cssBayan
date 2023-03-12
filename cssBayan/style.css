@@ -11,15 +11,39 @@ body {
     font-size: 1rem;
     color: #235699;
     background: #f5eef5;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+section {
+    padding: 2rem 0;
 }
 
-section {
-    padding: 1rem 0;
+img {
+    display: block;
+    width: 0;
+    height: auto;
+    margin: 0 auto;
+    transform: scale(0.3);
+    transform:  width 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
 input {
     display: none;
+}
+
+input :checked + label .icon {
+    transform: rotate3d(20deg);
+}
+
+input:not(:checked) + label .text {
+    color: bisque;
+}
+
+input :checked + label > img {
+    width: 50%;
+    transform: scale(2);
 }
 
 label {
@@ -39,15 +63,91 @@ span {
     font-weight: 600;
 }
 
+@media screen and (min-width: 320px) {
+    span {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 820px) {
+    span {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    span {
+        font-size: 2rem;
+    }
+}
+
 .container {
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+@media screen and (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+    
+}
+
+@media screen and (min-width: 820px) {
+    .container {
+        width: 820px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
+    }
 }
 
 .accordion-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (hover: hover) {
+    .accordion:hover .icon {
+        opacity: 1;
+    }
+}
+
+.accordion:hover input:not(:checked) + label .text {
+    color: #f5eef682;
+}
+
+.accord {
+    padding: 1rem 0;
+    border-top: 0.08rem solid rgb(0, 247, 255);
+}
+
+@media (hover: hover) {
+    .accord label:hover {
+        cursor: pointer
+    }
+
+    .accord:hover img {
+        width: 50%;
+        transform: scale(1);
+    }
+
+    .accord:hover .icon {
+        transform: rotate(35deg);
+    }
+
+    .accord label:active {
+        cursor: wait;
+    }
+
+    .accord input:not(:checked) + label:active .icon {
+        color: antiquewhite;
+    }
 }
 
 .icon {
