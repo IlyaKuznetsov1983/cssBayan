@@ -1,0 +1,33 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #01224d;
+    background: #aaa1aa;
+    overflow: hidden;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+input {
+    display: none;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
