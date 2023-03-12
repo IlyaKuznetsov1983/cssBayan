@@ -22,25 +22,25 @@ img {
     width: 0;
     height: auto;
     margin: 0 auto;
-    transform: scale(1);
-    transform:  width 300ms ease-in-out, transform 300ms ease-in-out;
+    transform: scale(0.3);
+    transform:   transform 300ms ease-in-out, width 300ms ease-in-out,;
 }
 
 input {
     display: none;
 }
 
-input :checked + label .icon {
-    transform: rotate3d(10deg);
+input:checked + label .icon {
+    transform: rotate(50deg);
 }
 
 input:not(:checked) + label .text {
     color: rgba(192, 174, 151, 0.527);
 }
 
-input :checked + label > img {
+input:checked + label > img {
     width: 50%;
-    transform: scale(2);
+    transform: scale(1);
 }
 
 label {

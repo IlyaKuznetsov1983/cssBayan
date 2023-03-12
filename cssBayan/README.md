@@ -1,1 +1,3 @@
-# https://IlyaKuznetsov1983.github.io/cssBayan/blob/gh-pages/cssBayan/index.html
+cssBayan
+
+# https://IlyaKuznetsov1983.github.io/cssBayan/cssBayan/index.html
