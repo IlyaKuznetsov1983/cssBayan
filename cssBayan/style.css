@@ -2,9 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -17,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 section {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 img {
@@ -25,8 +22,8 @@ img {
     width: 0;
     height: auto;
     margin: 0 auto;
-    transform: scale(3);
-    transform:  width 200ms ease-in-out, transform 200ms ease-in-out;
+    transform: scale(1);
+    transform:  width 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 input {
@@ -34,7 +31,7 @@ input {
 }
 
 input :checked + label .icon {
-    transform: rotate3d(20deg);
+    transform: rotate3d(10deg);
 }
 
 input:not(:checked) + label .text {
@@ -49,7 +46,7 @@ input :checked + label > img {
 label {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 h1 {
